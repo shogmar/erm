@@ -87,7 +87,7 @@ try {
         $el_loc = $dom->createElement('loc');
         $url = $urlset->appendChild($el_url);
         $loc = $url->appendChild($el_loc);
-        $text = $dom->createTextNode("https://www.ermolino-produkty.ru/".$v["SEO_TITLE"]);
+        $text = $dom->createTextNode("https://www.ermolino-produkty.ru/".$v["SEO_TITLE"]."/");
         $loc->appendChild($text);
     }
     //echo $dom->saveXML();
@@ -151,7 +151,7 @@ try {
         $el_loc = $dom->createElement('loc');
         $url = $urlset->appendChild($el_url);
         $loc = $url->appendChild($el_loc);
-        $text = $dom->createTextNode("https://www.ermolino-produkty.ru/recipes/".$v["TAG"]);
+        $text = $dom->createTextNode("https://www.ermolino-produkty.ru/recipes/".$v["TAG"]."/");
         $loc->appendChild($text);
     }
     //echo $dom->saveXML();
@@ -278,7 +278,7 @@ try {
         $el_loc = $dom->createElement('loc');
         $url = $urlset->appendChild($el_url);
         $loc = $url->appendChild($el_loc);
-        $text = $dom->createTextNode("https://www.ermolino-produkty.ru/".$v["TAG"]);
+        $text = $dom->createTextNode("https://www.ermolino-produkty.ru/".$v["TAG"]."/");
         $loc->appendChild($text);
     }
     //echo $dom->saveXML();
